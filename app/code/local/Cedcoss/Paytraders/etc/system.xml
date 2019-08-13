@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<config>
+   <sections>
+        <payment>
+            <groups>
+                <paytraders translate="label" module="paygate">
+                    <label>PayaCardServices Payement Method</label>
+                    <sort_order>00</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </active>
+                        
+						
+						  <submit_url>
+							 <label>Gateway URL</label>
+							 <frontend_type>text</frontend_type>
+							 <sort_order>58</sort_order>
+							 <show_in_default>1</show_in_default>
+							 <show_in_website>1</show_in_website>
+							 <show_in_store>0</show_in_store>
+						  </submit_url>
+							<site_code>
+								 <label>Payment Account ID</label>
+								 <frontend_type>text</frontend_type>
+								 <sort_order>58</sort_order>
+								 <show_in_default>1</show_in_default>
+								 <show_in_website>1</show_in_website>
+								 <show_in_store>0</show_in_store>
+								 <comment>Payment Account ID is your unique Paya Account ID provided once you have registered with Paya Card Services at payatrader.com, payataxi.com etc. </comment>
+							  </site_code>
+							<traderdisplayname>
+								 <label>Payment Trader Name</label>
+								 <frontend_type>text</frontend_type>
+								 <sort_order>58</sort_order>
+								 <show_in_default>1</show_in_default>
+								 <show_in_website>1</show_in_website>
+								 <show_in_store>0</show_in_store>
+							  </traderdisplayname>
+				  
+						<order_status translate="label">
+                              <label>New Order Status</label>
+							 <frontend_type>select</frontend_type>
+							 <source_model>adminhtml/system_config_source_order_status</source_model>
+							 <sort_order>50</sort_order>
+							 <show_in_default>1</show_in_default>
+							 <show_in_website>1</show_in_website>
+							 <show_in_store>0</show_in_store>
+                        </order_status>
+                        <title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </title>
+						
+						 <email_alert translate="label">
+                            <label>Recieve Email alerts</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+							<comment>you will receive email notifications from PayaCardServices of payments made on your website.</comment>
+                        </email_alert>
+						
+						
+						
+						 <showforce_paymentmethod translate="label">
+                            <label>Show Payment Mehtod unless Currency is not GBP </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </showforce_paymentmethod>
+						
+						
+						<image translate="label comment">
+                            <label>Image/Logo</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">payatrader</upload_dir>
+                            <base_url type="media" scope_info="1">payatrader</base_url>
+                            <sort_order>71</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>logo or image to appear on PayaTraders page for your branding or white-labeling</comment>
+                        </image>
+						
+						 <helpmsg translate="label">
+                            <label>Help Message</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>75</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+							<comment>Show help message during checkout process.</comment>
+                        </helpmsg>
+						
+						
+						
+						
+                    </fields>
+                </paytraders>
+            </groups>
+        </payment>
+    </sections>
+</config>

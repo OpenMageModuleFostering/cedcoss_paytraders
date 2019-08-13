@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+       <Cedcoss_Paytraders>
+         <version>0.1.0</version>
+       </Cedcoss_Paytraders>
+    </modules>
+ 
+    <global>
+
+    <blocks>
+        <paytraders>
+            <class>Cedcoss_Paytraders_Block</class>
+        </paytraders>
+    </blocks>
+ 
+
+        <models>
+            <paytraders>
+                <class>Cedcoss_Paytraders_Model</class>
+				<resourceModel>paytraders_resource</resourceModel>
+            </paytraders>
+			 <paytraders_resource>
+            	<class>Cedcoss_Paytraders_Model_Resource</class>
+				<entities>
+					<transaction>
+						<table>paytraders_transaction</table>
+					</transaction>
+	            </entities>
+      		 </paytraders_resource>
+        </models>
+ 	 <helpers>
+         <paytraders>
+            <class>Cedcoss_Paytraders_Helper</class>
+         </paytraders>
+      </helpers>
+        <resources>
+            <paytraders_setup>
+                <setup>
+                    <module>Cedcoss_Paytraders</module>
+                </setup>
+
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </paytraders_setup>
+            <paytraders_write>
+                <connection>
+                  <use>core_write</use>
+                </connection>
+            </paytraders_write>
+            <paytraders_read>
+               <connection>
+                <use>core_read</use>
+              </connection>
+            </paytraders_read>
+        </resources>
+    </global>
+ 
+    <default>
+        <payment>
+            <paytraders>
+                <active>0</active>
+                <model>paytraders/paymentMethod</model>
+                <order_status>pending</order_status>
+                <title>Paytrader</title>
+                <allowspecific>0</allowspecific>
+            </paytraders>
+         </payment>
+    </default>
+	 <frontend>
+	 
+		
+      <routers>
+         <paytraders>
+            <use>standard</use>
+            <args>
+               <module>Cedcoss_Paytraders</module>
+               <frontName>paytraders</frontName>
+            </args>
+         </paytraders>
+      </routers>
+	  
+	  
+		<layout>
+		  <updates>
+			<paytraders>
+			  <file>paytraders.xml</file>
+			</paytraders>
+		  </updates>
+		</layout>
+		
+   </frontend>
+</config>
