@@ -51,6 +51,7 @@ class Cedcoss_Paytraders_Block_Standard_Redirect extends Mage_Core_Block_Abstrac
         foreach ($helper->getStandardCheckoutFormFields($data) as $field=>$value) {
             $form->addField($field, 'hidden', array('name'=>$field, 'value'=>$value));
         }
+
         $submitButton = new Varien_Data_Form_Element_Submit(array(
             'value'    => $this->__('Click here if you are not redirected within 10 seconds...'),
         ));

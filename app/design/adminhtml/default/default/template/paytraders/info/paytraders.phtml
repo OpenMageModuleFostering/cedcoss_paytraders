@@ -34,19 +34,3 @@ $increment_id = $this->getInfo()->getOrder()->getData('increment_id');
 
 ?><b>Payment Method: </b> <?php echo $traderdisplayname = Mage::getStoreConfig('payment/paytraders/title'); ?>
 <br>
-<b>Transaction Id: </b>
-<?php
-
-$collection = Mage::getModel('paytraders/transaction')->getCollection();
-$collection->addFieldToFilter('order_number', $increment_id);
-
-
-if($collection->getFirstItem()->getData('transaction_status') == 'D')
-echo 'Payment Failed';
-else
-echo  $collection->getFirstItem()->getData('transaction_value_pence');
-
-
-
- ?>
-

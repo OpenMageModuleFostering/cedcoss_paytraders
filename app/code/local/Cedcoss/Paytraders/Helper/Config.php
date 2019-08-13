@@ -91,8 +91,11 @@ class Cedcoss_Paytraders_Helper_Config extends Mage_Core_Helper_Abstract{
 					'customer_postcode' => $postalcode,
 					'customer_house_name_or_number' => $street.' , '.$city.' , '.$state.' , '.$country,
 					'transaction_value_pence' => $amount*100,
-					'order_number'	=> 	$orderId,
-					'email_alert'	=> 	$email_alert
+					'order_number'	 => 	$orderId,
+					'email_alert'	 => 	$email_alert,
+					'cart_type'		 => 'magento',
+					'cart_version'   => Mage::getVersion(),
+					'module_version' => Mage::getConfig()->getModuleConfig('Cedcoss_Paytraders')->version
 					);
 		return $data;
 	}
