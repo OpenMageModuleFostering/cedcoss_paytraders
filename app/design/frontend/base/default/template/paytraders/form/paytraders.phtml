@@ -23,32 +23,8 @@
 <!-- Include the needed css/js files-->  
 <link media="screen" rel="stylesheet" href="<?php echo Mage::getBaseUrl('skin'); ?>frontend/base/default/css/laybuy/tooltip.css" type="text/css">
 
-<img src="<?php echo $this->escapeHtml($this->getPaymentAcceptanceMarkSrc())?>"  title="<?php echo $this->escapeHtml($this->getLayBuyTitle()) ?>" class="v-middle" />&nbsp;
+<img src="<?php echo Mage::getBaseUrl('skin');?>frontend/default/default/images/payment_cards_whitebg.png"  title="<?php echo $this->escapeHtml($this->getLayBuyTitle()) ?>" class="v-middle" />&nbsp;
 
 <?php
 $helpmsg = Mage::getStoreConfig('payment/paytraders/helpmsg');
 ?>
-<a href="#" class="callBackTip" title="<?php echo Mage::helper('paytraders')->__( $helpmsg) ?>"><?php echo Mage::helper('paytraders')->__('What is PayaCardSolution ?') ?></a>
-<script type="text/javscript">
-    // initiate the plugin after DOM has loaded
-    payatrader(function(){    
-        // List of all parameters and their default values:  
-       payatrader('a.callBackTip').aToolTip({  
-            // no need to change/override  
-            closeTipBtn: 'aToolTipCloseBtn',  
-            toolTipId: 'aToolTip',  
-            // ok to override  
-            fixed: false,                   // Set true to activate fixed position  
-            clickIt: true,                 // set to true for click activated tooltip  
-            inSpeed: 200,                   // Speed tooltip fades in  
-            outSpeed: 100,                  // Speed tooltip fades out  
-            tipContent: '<?php echo Mage::helper('paytraders')->__( $helpmsg ) ?>',                 // Pass in content or it will use objects 'title' attribute  
-            toolTipClass: 'defaultTheme',   // Set class name for custom theme/styles  
-            xOffset: 5,                     // x position  
-            yOffset: 5,                     // y position  
-            onShow: function(){},                   // callback function that fires after atooltip has shown  
-            onHide: function(){}                    // callback function that fires after atooltip has faded out      
-        });  
-          
-    });  
-</script> 
