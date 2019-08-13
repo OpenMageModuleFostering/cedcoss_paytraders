@@ -28,6 +28,7 @@
 							 <show_in_default>1</show_in_default>
 							 <show_in_website>1</show_in_website>
 							 <show_in_store>0</show_in_store>
+                             <comment><![CDATA[Please refer to the <a href="https://www.payatrader.com/download_files.php?filename=trader_documents/MagentoCart_uguide.pdf">Magento module documentation</a> for valid values]]></comment>
 						  </submit_url>
 							<site_code>
 								 <label>Payment Account ID</label>

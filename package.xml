@@ -1,22 +1,30 @@
 <?xml version="1.0"?>
 <package>
     <name>Cedcoss_Paytraders</name>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
     <channel>community</channel>
     <extends/>
     <summary>Paya Card Services</summary>
-    <description>Payatrader brings credit and debit card acceptance to small businesses. Designed for use with a wide range of businesses such as plumbers, electricians, gardeners, cleaners and mobile hairdressers, Payatrader brings greater choice, convenience and control.&#xD;
-&#xD;
-Taking a credit or debit card payment guarantees the funds, unlike cheques which can bounce after they have been paid into the bank. And card payments means that time isn't spent taking cheques to the bank, it all happens automatically. This means that businesses save valuable time on administration, time which can be spent running the business and generating more income.&#xD;
-&#xD;
-The cheque guarantee facility was withdrawn in 2011 and cheques themselves are likely to be phased out over the coming years. With Cards becoming the dominant form of secure payment Payatrader is the UK's first dedicated card acceptance solution for small businesses.</description>
+    <description>Payatrader brings credit and debit card acceptance to small businesses. Designed for use with a wide&#xD;
+      range of businesses such as plumbers, electricians, gardeners, cleaners and mobile hairdressers, Payatrader&#xD;
+      brings greater choice, convenience and control.&#xD;
+      &#xD;
+      Taking a credit or debit card payment guarantees the funds, unlike cheques which can bounce after they have been&#xD;
+      paid into the bank. And card payments means that time isn't spent taking cheques to the bank, it all happens&#xD;
+      automatically. This means that businesses save valuable time on administration, time which can be spent running&#xD;
+      the business and generating more income.&#xD;
+      &#xD;
+      The cheque guarantee facility was withdrawn in 2011 and cheques themselves are likely to be phased out over the&#xD;
+      coming years. With Cards becoming the dominant form of secure payment Payatrader is the UK's first dedicated&#xD;
+      card acceptance solution for small businesses.&#xD;
+   </description>
     <notes>Payment Gateway Solution</notes>
     <authors><author><name>Mike Parry</name><user>acceptacard</user><email>mike.parry@acceptacard.co.uk</email></author></authors>
-    <date>2015-10-06</date>
-    <time>14:37:32</time>
-    <contents><target name="magelocal"><dir name="Cedcoss"><dir><dir name="Paytraders"><dir name="Block"><dir name="Form"><file name="Paytraders.php" hash="eac26b778389a8cd69da4d89645ba75e"/></dir><dir name="Info"><file name="Paytraders.php" hash="3e669302d8e3b64f92fbb6333af63185"/></dir><dir name="Standard"><file name="Redirect.php" hash="47bb7e2ce5e8a61368e797f13c42bfc3"/></dir></dir><dir name="Helper"><file name="Config.php" hash="eae91600f3884b9254280b491abb2e40"/><file name="Data.php" hash="91c86adafdc72900695023face6f0774"/></dir><dir name="Model"><file name="PaymentMethod.php" hash="41c214c4b3f20b7abdad1211933b8656"/><dir name="Resource"><dir name="Transaction"><file name="Collection.php" hash="01d1c5f1d9d1b80b9c4c4e81050e198c"/></dir><file name="Transaction.php" hash="26d660ebbe3b56ab3350d07512e000b3"/></dir><file name="Transaction.php" hash="1f50682827167820536295408be73f04"/></dir><dir name="controllers"><file name="StandardController.php" hash="7ea460179bfd3fd984322729bd582f07"/></dir><dir name="etc"><file name="config.xml" hash="f962edb6bd50da2b652b3eb801b22d1c"/><file name="system.xml" hash="76aebc21d27415c3d3e4888d5c3251f3"/></dir><dir name="sql"><dir name="paytraders_setup"><file name="mysql4-install-0.1.0.php" hash="ceb08ae4a325beeb943d1582639537bc"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Cedcoss_Paytraders.xml" hash="f42ebd6d28f01973f5e775aadb5c5525"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="paytraders.xml" hash="cb6464bcf4b31e64d9dcd70b8c077a13"/></dir><dir name="template"><dir name="paytraders"><file name="failure.phtml" hash="02ff42204674d46a2d19f4476213a05c"/><dir name="form"><file name="paytraders.phtml" hash="c3df057cefbdafcd01a4d4567813533b"/></dir><dir name="info"><file name="paytraders.phtml" hash="b81bdd27bb0a9a51d3a6e9a024176471"/></dir></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="paytraders"><dir name="info"><file name="paytraders.phtml" hash="100bc1798d771c7794b2689e48c94d1c"/></dir></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="paytrader"><file name="jquery.atooltip.js" hash=""/><file name="jquery.min.js" hash=""/></dir></dir><dir name="skin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="images"><file name="payment_cards_whitebg.png" hash="ccd3fa379991e617a440108a3bac58a1"/></dir></dir></dir></dir></dir></target></contents>
+    <date>2016-02-29</date>
+    <time>15:10:11</time>
+    <contents><target name="magelocal"><dir name="Cedcoss"><dir name="Paytraders"><dir name="Block"><dir name="Form"><file name="Paytraders.php" hash=""/></dir><dir name="Info"><file name="Paytraders.php" hash=""/></dir><dir name="Standard"><file name="Redirect.php" hash=""/></dir></dir><dir name="Helper"><file name="Config.php" hash=""/><file name="Data.php" hash=""/></dir><dir name="Model"><file name="PaymentMethod.php" hash=""/><dir name="Resource"><dir name="Transaction"><file name="Collection.php" hash=""/></dir><file name="Transaction.php" hash=""/></dir><file name="Transaction.php" hash=""/></dir><dir name="controllers"><file name="StandardController.php" hash=""/></dir><dir name="etc"><file name="config.xml" hash=""/><file name="system.xml" hash=""/></dir><dir name="sql"><dir name="paytraders_setup"><file name="mysql4-install-0.1.0.php" hash=""/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Cedcoss_Paytraders.xml" hash=""/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="paytraders.xml" hash=""/></dir><dir name="template"><dir name="paytraders"><file name="failure.phtml" hash=""/><dir name="form"><file name="paytraders.phtml" hash=""/></dir><dir name="info"><file name="paytraders.phtml" hash=""/></dir></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="paytraders"><dir name="info"><file name="paytraders.phtml" hash=""/></dir></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="paytrader"><file name="jquery.atooltip.js" hash=""/><file name="jquery.min.js" hash=""/></dir></dir><dir name="skin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="images"><file name="payment_cards_whitebg.png" hash=""/></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
