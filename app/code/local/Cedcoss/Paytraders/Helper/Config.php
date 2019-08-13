@@ -85,7 +85,7 @@ class Cedcoss_Paytraders_Helper_Config extends Mage_Core_Helper_Abstract{
 					'posturl'=>$posturl,
 					'returnurl' => $returnurl,
 					'traderdisplayname' => $traderdisplayname,
-					'customer_name' 	=> $firstname . ' '. $firstname,
+					'customer_name' 	=> $firstname . ' '. $lastname,
 					'customer_email' => $email,
 					'customer_telephone' => $phone,
 					'customer_postcode' => $postalcode,
