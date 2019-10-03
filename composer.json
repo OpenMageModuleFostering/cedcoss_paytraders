@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Cedcoss_Paytraders",
+    "name": "openmage-module-fostering\/cedcoss_paytraders",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL-3.0)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Paya Card Services",
     "authors": [
