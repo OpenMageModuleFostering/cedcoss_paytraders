@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Cedcoss_Paytraders",
+    "name": "OpenMageModuleFostering\/Cedcoss_Paytraders",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL-3.0)",
     "homepage": "",
     "description": "Paya Card Services",
     "authors": [
-    {
-        "name": "Mike Parry",
-        "email": "mike.parry@acceptacard.co.uk"
-    }
-],
+        {
+            "name": "Mike Parry",
+            "email": "mike.parry@acceptacard.co.uk"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
